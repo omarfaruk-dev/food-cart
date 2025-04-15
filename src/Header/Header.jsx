@@ -29,7 +29,7 @@ const Header = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="/contact">Contact</a>
+                <NavLink to='/contact'>Contact</NavLink>
             </div>
         </div>
     );

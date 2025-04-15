@@ -9,6 +9,8 @@ import Home from './Home/Home.jsx';
 import FastFoods from './Foods/FastFoods.jsx';
 import MixFoods from './MixFoods/MixFoods.jsx';
 import MixFoodDetails from './MixFoods/MixFoodDetails.jsx';
+import NotFound from './404/NotFound.jsx';
+import Contact from './Contact/Contact.jsx';
 
 
 const router = createBrowserRouter([
@@ -32,9 +34,19 @@ const router = createBrowserRouter([
         path: '/mix-foods/:foodId',
         loader: ({params})=> fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${params.foodId}`),
         Component: MixFoodDetails
+      },
+      {
+        path: '/contact',
+        Component: Contact
       }
+      
 
     ]
+  },
+  {
+    path: '*',
+    Component: NotFound
+    // element: <h2>Page not found</h2>
   }
 ])
 

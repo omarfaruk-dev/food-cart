@@ -6,7 +6,7 @@ const MixFood = ({ mixFood }) => {
 
     return (
         <div className='border-2 border-amber-500 rounded-lg mb-5 md:mb-0 shadow-md'>
-            <img className='w-full rounded-md' src={strMealThumb} alt="" />
+            <img className='w-full h-[200px] object-cover rounded-md' src={strMealThumb} alt="" />
             <div className='p-3'>
                 <h2 className='text-lg mb-1'>Item Name: <strong>{strMeal}</strong></h2>
                 <h3>Category: <strong>{strCategory}</strong></h3>
