@@ -7,7 +7,7 @@ const FastFoods = () => {
     const fastFoods = useLoaderData();
 
     return (
-        <div className='mt-10 container mx-auto md:grid md:grid-cols-2 lg:grid-cols-4 gap-5'>
+        <div className='my-20 container mx-auto md:grid md:grid-cols-2 lg:grid-cols-4 gap-5'>
             {
                 fastFoods.categories.map(fastFood => <FastFood key={fastFood.idCategory} fastFood ={fastFood} ></FastFood>)
             }
