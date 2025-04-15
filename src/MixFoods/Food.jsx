@@ -8,7 +8,7 @@ const Food = ({ food }) => {
     const navigate = useNavigate();
 
     return (
-        <div className='w-[40%] mx-auto'>
+        <div className='container w-[100%] xl:w-[40%] mx-auto px-5'>
             {/* <button onClick={()=>navigate(-1)}><ArrowLeft/>Back</button> */}
             <button className='btn btn-warning mb-10' onClick={()=> navigate(-1)}><ArrowLeft/> Back</button>
 

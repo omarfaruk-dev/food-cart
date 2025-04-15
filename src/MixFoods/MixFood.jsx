@@ -12,9 +12,9 @@ const MixFood = ({ mixFood }) => {
                 <h3>Category: <strong>{strCategory}</strong></h3>
                 <h3>Area: <strong>{strArea}</strong></h3>
                 <div className='flex items-center justify-between mx-5'>
-                    <NavLink to={`${idMeal}`}><button className='btn btn-warning text-white text-lg my-5'>View Recipe</button></NavLink>
+                    <NavLink to={`${idMeal}`}><button className='btn btn-warning text-white my-5'>View Recipe</button></NavLink>
                     
-                    <button className='btn btn-warning text-white text-lg my-5'><a target='_blank' href={strYoutube}>Watch Video</a></button>
+                    <button className='btn btn-warning text-white my-5'><a target='_blank' href={strYoutube}>Watch Video</a></button>
                 </div>
 
             </div>
